@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Countries</title>
+    <link rel="stylesheet" href="./css/main.css">
+   <script type="text/javascript" src="./js/bundle.js"></script>
+
+  </head>
+
+  <body>
+
+    <div id="app">
+      <h1>Countries</h1>
+      <h2 v-if="countries.length">Total Populations: {{totalPopulation}}</h2>
+
+        <select v-model="selectedCountry">
+          <option v-for="(country, index) in countries" :value="index">{{country.name}}</option>
+        </select>
+
+    </div>
+
+
+
+
+
+  </body>
+
+</html>
